@@ -1,4 +1,4 @@
-/*Remove Kth Node from end of the list*/
+/* 7. Remove Kth Node from end of the list*/
 public int RemoveKNodeFromLast(ListNode node, int k)
 {
     ListNode result = new ListNode(0, head);
@@ -17,13 +17,13 @@ public int RemoveKNodeFromLast(ListNode node, int k)
     slow.next = slow.next.next;
     return result.next;
 }
-/*Remove Kth node without having head*/
+/* 8. Remove Kth node without having head*/
 public void DeleteNode(ListNode node)
 {
     node.val = node.next.val;
     node.next = node.next.next;
 }
-/*Remove occurences of a value in LinkedList*/
+/* 9. Remove occurences of a value in LinkedList*/
 public ListNode RemoveOccurences(ListNode head, int k)
 {
     ListNode result = new ListNode(0, head);
@@ -41,7 +41,7 @@ public ListNode RemoveOccurences(ListNode head, int k)
     }
     return result.next;
 }
-/*Add Kth Node in Linked List*/
+/* 10. Add Kth Node in Linked List*/
 public ListNode AddElementAtK(ListNode head, int k, ListNode val)
 {
     ListNode curr = head;
@@ -60,7 +60,7 @@ public ListNode AddElementAtK(ListNode head, int k, ListNode val)
 
     return head;
 }
-/*Append 2 Linked List*/
+/* 11. Append 2 Linked List*/
 public ListNode AppendLists(ListNode list1, ListNode list2)
 {
     ListNode curr = list1;

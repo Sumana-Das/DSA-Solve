@@ -1,4 +1,4 @@
-/* 1. Linked List Class */
+/* Linked List Class */
 public class ListNode
 {
     int data;
@@ -9,7 +9,7 @@ public class ListNode
         this.next = next;
     }
 }
-/* 2. Print a Linked List */
+/* 1. Print a Linked List */
 public void printLinkedList(ListNode head)
 {
     ListNode curr = head;
@@ -20,7 +20,7 @@ public void printLinkedList(ListNode head)
         curr = curr.next;
     }
 }
-/* Linked List to Array */
+/* 2. Linked List to Array */
 public int Length(ListNode node)
 {
     int count = 0;
@@ -70,7 +70,7 @@ public ListNode Reverse(ListNode node)
 
     return prev;
 }
-/*Kth Node in Linked List*/
+/* 4. Kth Node in Linked List*/
 public int NByKthNode(Node head, int k)
 {
     if(head == null)
@@ -97,7 +97,7 @@ public int NByKthNode(Node head, int k)
     }
     return val;
 }
-/*Find middle element of Linked List*/
+/* 5. Find middle element of Linked List*/
 public int FindMiddle(ListNode node)
 {
     int len = Length(node);
@@ -109,7 +109,7 @@ public int FindMiddle(ListNode node)
     }
     return curr;
 }
-/*Find kth Node of end of Linked List*/
+/* 6. Find kth Node of end of Linked List*/
 public int FindKthNode(ListNode node)
 {
     int len = Length(node);
