@@ -1,4 +1,4 @@
-/* 12. Merge 2 sorted List*/
+/* 1. Merge 2 sorted List*/
 public ListNode MergeTwoLists(ListNode list1, ListNode list2) {
     ListNode result = new ListNode(0);
     ListNode curr = result;
@@ -26,7 +26,7 @@ public ListNode MergeTwoLists(ListNode list1, ListNode list2) {
     }
     return result.next;
 }
-/* 13. Valid palindrome or not a linked list*/
+/* 2. Valid palindrome or not a linked list*/
 public bool IsPalindrome(ListNode node)
 {
     ListNode slow = node;
