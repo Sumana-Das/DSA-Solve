@@ -52,3 +52,39 @@ public bool IsPalindrome(ListNode node)
     }
     return true;
 }
+/* 3. Two pointer approach: Intersection of Two Linked Lists */
+public ListNode GetIntersectNode(ListNode headA, ListNode headB)
+{
+    ListNode nodeA = headA;
+    ListNode nodeB = headB;
+
+    while(nodeA != nodeB)
+    {
+        nodeA = (nodeA == null) ? headB : nodeA.next;
+        nodeB = (nodeB == null) ? headA : nodeB.next;
+    }
+    return nodeA;
+}
+/* Intersection of Two Linked Lists */
+public ListNode GetIntersectNode(ListNode headA, ListNode headB)
+{
+    int lenA = GetLength(headA);
+    int lenB = GetLength(headB);
+
+    while(lenA > lenB)
+    {
+        headA = headA.next;
+        lenA--;
+    }
+    while(lenB > lenA)
+    {
+        headB = headB.next;
+        lenB--;
+    }
+    while(headA != headB)
+    {
+        headA = headA.next;
+        headB = headB.next;
+    }
+    return headA;
+}

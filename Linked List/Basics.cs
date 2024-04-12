@@ -109,6 +109,25 @@ public int FindMiddle(ListNode node)
     }
     return curr;
 }
+/*Two Pointer approach: Find middle element of Linked List */
+public ListNode MiddleNode(ListNode head) {
+    int len = Length(head);
+    ListNode slow = head;
+    ListNode fast = head.next;
+    while(fast != null && fast.next != null)
+    {
+        slow = slow.next;
+        fast = fast.next.next;
+    }
+    if(len % 2 == 0)
+    {
+        return slow.next;
+    }
+    else
+    {
+        return slow;
+    }
+}
 /* 6. Find kth Node of end of Linked List*/
 public int FindKthNode(ListNode node)
 {
